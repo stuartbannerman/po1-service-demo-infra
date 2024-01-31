@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: po1-service-demo
+spec:
+  type: ClusterIP
+  selector:
+    app: po1-service-demo
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080

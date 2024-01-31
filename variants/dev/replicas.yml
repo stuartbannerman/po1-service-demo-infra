@@ -1,0 +1,7 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: po1-service-demo
+spec:
+  replicas: 1
