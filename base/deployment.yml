@@ -18,7 +18,8 @@ spec:
         imagePullPolicy: Always
         image: 236731556556.dkr.ecr.eu-west-1.amazonaws.com/po1/po1-service-demo:latest
         ports:
-        - containerPort: 8080
+        - name: http
+          containerPort: 8080
         envFrom:
         - configMapRef:
             name: po1-service-demo
